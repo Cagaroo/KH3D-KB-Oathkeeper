@@ -1,23 +1,38 @@
 ---
 title: KB - Oathkeeper
 originalAuthor: Cagaroo
-description: A Keyblade imbued with light power. Replaces Knockout Punch for Sora and Riku.
-dependencies: null
+description: >-
+    A Keyblade imbued with light power. Replaces Knockout Punch for Sora and Riku.
 assets:
-  - name: chara/wep/w_ri16/mig/0/bin/w_ri160.pmo
+## Overworld
+  - name: chara/wep/w_so16/mig/0/bin/w_so160.pmo
     multi:
-      - name: chara/wep/w_so16/mig/0/bin/w_so160.pmo
-      - name: chara/wep/w_so16/mig/0/bin/w_so16s.pmo
-      - name: chara/wep/w_ri16/mig/0/bin/w_ri16s.pmo
+      - name: chara/wep/w_ri16/mig/0/bin/w_ri160.pmo
     method: copy
     source:
-      - name: 3ds/chara_wep/22-w_ri160.pmo
-  - name: chara/wep/w_ri16/mig/1/bin/w_ri161.pmo
+      - name: 3ds/chara_wep/51-w_so160.pmo
+  - name: remastered\chara\wep\w_so16\mig\0\bin\w_so160.pmo\w_so160_00.dds
     multi:
-      - name: chara/wep/w_so16/mig/1/bin/w_so161.pmo
+      - name: remastered\chara\wep\w_ri16\mig\0\bin\w_ri160.pmo\w_ri160_00.dds
     method: copy
     source:
-      - name: 3ds/chara_wep/135-w_ri161.pmo
+      - name: remastered\chara_wep\w_so160\w_so160_00.dds
+
+## The Grid
+  - name: chara/wep/w_so16/mig/1/bin/w_so161.pmo
+    multi:
+      - name: chara/wep/w_ri16/mig/1/bin/w_ri161.pmo
+    method: copy
+    source:
+      - name: 3ds/chara_wep/205-w_so161.pmo
+  - name: remastered\chara\wep\w_so16\mig\1\bin\w_so161.pmo\w_so161_00.dds
+    multi:
+      - name: remastered\chara\wep\w_ri16\mig\1\bin\w_ri161.pmo\w_so161_00.dds
+    method: copy
+    source:
+      - name: remastered\chara_wep\w_so161\w_so161_00.dds
+
+## Menu
   - name: remastered/item/jp/bin/it020c.ctt/it020c.dds
     multi:
       - name: remastered/item/jp/bin/it020cl.ctt/it020cl.dds
